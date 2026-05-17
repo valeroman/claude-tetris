@@ -8,7 +8,17 @@
 </head>
 <body>
   <div class="wrapper">
-    <h1 class="game-title">TETRIS</h1>
+    <div class="title-row">
+      <h1 class="game-title">TETRIS</h1>
+      <label class="theme-toggle" for="theme-chk">
+        <span class="toggle-icon">🌙</span>
+        <span class="toggle-pill">
+          <input type="checkbox" id="theme-chk">
+          <span class="toggle-knob"></span>
+        </span>
+        <span class="toggle-icon">☀</span>
+      </label>
+    </div>
     <div class="game-container">
       <canvas id="board" width="300" height="600"></canvas>
 
@@ -41,6 +51,8 @@
             <li><kbd>P</kbd> pausa</li>
           </ul>
         </div>
+
+
       </aside>
     </div>
 
