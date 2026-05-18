@@ -52,7 +52,10 @@
           </ul>
         </div>
 
-
+        <div class="panel-section">
+          <span class="label">RECORDS</span>
+          <ol id="panel-records-list" class="panel-records"></ol>
+        </div>
       </aside>
     </div>
 
@@ -60,6 +63,21 @@
       <div class="overlay-box">
         <p id="overlay-title">GAME OVER</p>
         <p id="overlay-score"></p>
+
+        <div id="name-entry" class="hidden">
+          <p class="record-prompt">Nuevo record — ingresa tu nombre:</p>
+          <div class="name-input-row">
+            <input type="text" id="player-name" maxlength="12" placeholder="Jugador" autocomplete="off" />
+            <button id="save-record-btn">Guardar</button>
+          </div>
+        </div>
+
+        <div id="records-section" class="hidden">
+          <p class="records-heading">— TOP 5 —</p>
+          <ol id="records-list" class="records-list"></ol>
+          <button id="reset-records-btn" class="reset-btn">Borrar records</button>
+        </div>
+
         <button id="restart-btn">Reiniciar</button>
       </div>
     </div>
