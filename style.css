@@ -269,3 +269,128 @@ kbd {
 #restart-btn:hover {
   background: #9bbdff;
 }
+
+/* ---- Pause Menu ---- */
+.pause-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  min-width: 220px;
+  padding: 8px;
+}
+
+.pause-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: var(--accent);
+}
+
+.pause-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.menu-btn {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--board-border);
+  border-radius: 6px;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  width: 100%;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.menu-btn:hover {
+  background: var(--kbd-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.menu-btn.primary {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.menu-btn.primary:hover {
+  background: #9bbdff;
+  border-color: #9bbdff;
+  color: var(--bg);
+}
+
+.pause-controls-list {
+  width: 100%;
+  border: 1px solid var(--board-border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  background: var(--kbd-bg);
+}
+
+.pause-controls-list.hidden {
+  display: none;
+}
+
+.pause-controls-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pause-controls-list li {
+  font-size: 12px;
+  color: var(--ctrl-text);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.25s;
+}
+
+.level-picker-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  border-top: 1px solid var(--board-border);
+  padding-top: 12px;
+}
+
+.level-picker {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.level-btn {
+  background: var(--kbd-bg);
+  color: var(--accent);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.level-btn:hover {
+  background: var(--board-border);
+}
+
+#start-level-val {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 28px;
+  text-align: center;
+}
