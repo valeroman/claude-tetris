@@ -603,3 +603,89 @@ kbd {
   background: #e57373;
   color: var(--bg);
 }
+
+/* ---- Skin picker ---- */
+.skin-picker {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.skin-btn {
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  background: var(--kbd-bg);
+  color: var(--kbd-text);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.skin-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.skin-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+/* ---- Neon skin ---- */
+[data-skin="neon"] {
+  --bg: #000005;
+  --text: #d0d0ff;
+  --board-bg: #020208;
+  --board-border: #001a33;
+  --accent: #00ffff;
+  --label: #005555;
+  --ctrl-text: #336666;
+  --kbd-bg: #001a1a;
+  --kbd-border: #004444;
+  --kbd-text: #00aaaa;
+  --overlay-bg: rgba(0, 0, 10, 0.88);
+  --shadow: rgba(0, 255, 255, 0.15);
+  --toggle-track: #001a1a;
+  --toggle-thumb: #00ffff;
+}
+
+/* ---- Pastel skin ---- */
+[data-skin="pastel"] {
+  --bg: #f0eaf8;
+  --text: #4a3f60;
+  --board-bg: #e8e0f5;
+  --board-border: #d0c4e8;
+  --accent: #9575cd;
+  --label: #b0a0cc;
+  --ctrl-text: #887aaa;
+  --kbd-bg: #ddd0f0;
+  --kbd-border: #c8b8e0;
+  --kbd-text: #6050a0;
+  --overlay-bg: rgba(200, 180, 240, 0.85);
+  --shadow: rgba(120, 80, 180, 0.15);
+  --toggle-track: #d0c0e8;
+  --toggle-thumb: #9575cd;
+}
+
+/* ---- Pixel skin ---- */
+[data-skin="pixel"] {
+  --bg: #08080f;
+  --text: #c8c8d8;
+  --board-bg: #10101c;
+  --board-border: #202030;
+  --accent: #f0d020;
+  --label: #404050;
+  --ctrl-text: #505060;
+  --kbd-bg: #181828;
+  --kbd-border: #303048;
+  --kbd-text: #8080a0;
+  --overlay-bg: rgba(0, 0, 8, 0.88);
+  --shadow: rgba(0, 0, 0, 0.7);
+  --toggle-track: #181828;
+  --toggle-thumb: #f0d020;
+}
